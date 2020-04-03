@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    className: com.mysql.jdbc.Driver
+    password:
+    platform: mysql
+    url: jdbc:mysql://localhost/conmebol?createDatabaseIfNotExist=true&useTimezone=true&serverTimezone=UTC
+    username: root
+  jpa:
+    database-platform: org.hibernate.dialect.MariaDBDialect
+    generate-ddl: false
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  application:
+    name: product-serve
